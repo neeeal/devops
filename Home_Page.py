@@ -1,28 +1,43 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Hello",
-    page_icon="👋",
+    page_title="Home",
+    page_icon="🏠",
 )
 
-st.write("# Welcome to Streamlit! 👋")
-
-st.sidebar.success("Select a demo above.")
-
+# Add a CSS style to center the title and make it bigger
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
+    <style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Stack the emoji and title */
+        height: 80vh;
+    }
+
+    .bigger-title {
+        font-size: 56px; /* You can adjust the font size as needed */
+    }
+    .emoji {
+        font-size: 72px; /* Adjust the size of the emoji as needed */
+    }
+    .description {
+        text-align: center;
+        font-size: 18px; /* Adjust the font size as needed */
+        margin-top: 20px; /* Add some margin space for better spacing */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
+
+# Create a container div with the center class to center the emoji, title, and description
+st.markdown(
+    '<div class="center"><span class="emoji">🕓</span><h1 class="bigger-title">Time Classification</h1>'
+    '<p class="description">Simplify Analog Clock Reading.</p></div>',
+    unsafe_allow_html=True,
+)
+
+st.sidebar.success("Select page above.")

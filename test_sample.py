@@ -14,7 +14,7 @@ def import_and_predict(image_data,model):
     size =  (224,224)
     image = ImageOps.fit(image_data,size,Image.LANCZOS)
     img=np.asarray(image)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img_reshape=gray[np.newaxis,...]
     prediction=model.predict(img_reshape)
     return prediction

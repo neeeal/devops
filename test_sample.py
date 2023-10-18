@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image,ImageOps
 
 def load_model():
-    model = tf.keras.models.load_model("assets/best_model.h5", compile=False)
+    model = tf.keras.models.load_model("assets/model.h5", compile=False)
     model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['acc'])
     return model
 

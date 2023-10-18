@@ -17,10 +17,16 @@ def import_and_predict(image_data, model):
     prediction = model.predict(img_reshape)
     return prediction
 
-def test_prediction():
+def test_image_loading():
     # model = load_model()
     image = Image.open("assets/22.jpg")
     # result = import_and_predict(image,model)
     # print(result)
     assert image != np.nan
     
+def test_class_loading():
+    with open("assets/classes.txt") as f:
+        temp = f.readlines()
+        class_names = [t.replace("\n",'') for t in temp]
+    f.close()
+    assert len(class_names) > 0

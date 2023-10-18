@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image,ImageOps
 
 def load_model():
-    model = tf.keras.models.load_model("assets/model.h5", compile=False)
+    model = tf.keras.models.load_model("assets/time_model.h5", compile=False)
     model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['acc'])
     return model
 
@@ -23,3 +23,4 @@ def test_prediction():
     result = import_and_predict(image,model)
     print(result)
     assert np.argmax(result) != np.nan
+    

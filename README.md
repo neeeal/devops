@@ -5,6 +5,8 @@ In a world where everyone is dependent on digital timekeeping, the ability to ef
 
 Mastering time classification is a task where it can be useful for us especially in a subject-matter time domain and applications. The goal of the analog clock image time classification is to know or identify the time that is being indicated by the analog clock. 
 
+![Alt text](assets\41.jpg "sample clock image")
+
 > This project is for simplifying analog clock reading by using an image classification model through streamlit.
 
 # In partial compliance for CPE028 - Developing Applications and Automation
@@ -35,7 +37,7 @@ This python file tests some of the functionalities of the application. Currently
 
 This part is where you can see the title of the website itself, the short description, and what is the purpose of the website which is to classify analog time to its corresponding digital time.
 
-https://devops-paul-lgnnthndczjrlwglubwkdc.streamlit.app/
+> https://devops-paul-lgnnthndczjrlwglubwkdc.streamlit.app/
 
 ### Classification Page:
 

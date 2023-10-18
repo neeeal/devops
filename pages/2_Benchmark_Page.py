@@ -6,7 +6,7 @@ import cv2
 from PIL import Image, ImageOps
 
 st.set_page_config(
-    page_title="About",
+    page_title="Benchmark",
     page_icon="📝",
 )
 
@@ -17,7 +17,7 @@ st.write("""
 
 # Description
 st.write("""
-This table provides information on the best architectures for classification in deep learning. It will be used as a benchmarking reference.
+This table provides information on the best architectures for classification in deep learning. It will be used as a benchmarking reference in future updates.
 """)
 # Create a table with architecture names, descriptions, and hyperlinks
 architectures = {

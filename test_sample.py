@@ -22,4 +22,4 @@ def test_prediction():
     image = Image.open("assets/22.jpg")
     result = import_and_predict(image,model)
     print(result)
-    assert np.argmax(result) > -1
+    assert np.argmax(result) != np.nan

@@ -23,19 +23,19 @@ https://github.com/martinezpaull/devops-paul/blob/main/test_sample.py
 
 ## Features:
 
-###Home Page:
+### Home Page:
 
 This part is where you can see the title of the website itself, the short description, and what is the purpose of the website which is to classify analog time to its corresponding digital time.
 
 https://devops-paul-lgnnthndczjrlwglubwkdc.streamlit.app/
 
-###Classification Page:
+### Classification Page:
 
 This part is where we deployed a time classification model, if an image has been inputted it will classify the corresponding digital time and will show the output results. 
 
 https://devops-paul-lgnnthndczjrlwglubwkdc.streamlit.app/Classification_Page
 
-###About Page:
+### About Page:
 
 This part is where you can see the different types of classification algorithms that you can use in benchmarking. 
 

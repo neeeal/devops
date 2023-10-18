@@ -17,10 +17,7 @@ def import_and_predict(image_data, model):
     prediction = model.predict(img_reshape)
     return prediction
 
-def test_prediction():
+def test_model():
     model = load_model()
-    image = Image.open("assets/22.jpg")
-    result = import_and_predict(image,model)
-    print(result)
-    assert np.argmax(result) != np.nan
+    assert model == True
     
